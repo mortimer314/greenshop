@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Head>
         <Link rel="icon" href="/favicon/favicon.ico" />
-        <title>فروشگاه گل و گیاه | Florist</title>
+        <title>فروشگاه گل و گیاه | Green Shop</title>
         <meta name="description" content="فروشگاه اینترنتی انواع گل و گیاه آپارتمانی و زینتی" />
       </Head>
 
