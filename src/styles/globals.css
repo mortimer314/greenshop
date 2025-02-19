@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base{
+  @font-face {
+    font-family: shabnam;
+    src: url("/public/fonts/shabnam/Shabnam-Light.woff");
+  }
+  
+  @font-face {
+    font-family: shabnamMedium;
+    src: url("/fonts/shabnam/Shabnam-Medium.woff");
+  }
+  @font-face {
+    font-family: shabnamBold;
+    src: url("/fonts/shabnam/Shabnam-Bold.woff");
+  }
+  
+  @font-face {
+    font-family: dana;
+    src: url("/fonts/Dana/woff2/DanaFaNum-Regular.woff2");
+  }
+  
+  @font-face {
+    font-family: danaBold;
+    src: url("/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2");
+  }
+  
+  @font-face {
+    font-family: danaMedium;
+    src: url("/fonts/Dana/woff2/DanaFaNum-Medium.woff2");
+  }
+  
+  @font-face {
+    font-family: morabba;
+    src: url("/fonts/Morabba/woff2/Morabba-Light.woff2");
+  }
+  
+  @font-face {
+    font-family: morabbaBold;
+    src: url("/fonts/Morabba/woff2/Morabba-Bold.woff2");
+  }
+  
+  @font-face {
+    font-family: morabbaMedium;
+    src: url("/fonts/Morabba/woff2/Morabba-Medium.woff2");
+  }
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
