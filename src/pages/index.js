@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Navbar from "@/components/modules/navbar/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,14 +38,16 @@ export default function Home() {
         <meta name="description" content="فروشگاه اینترنتی انواع گل و گیاه آپارتمانی و زینتی" />
       </Head>
 
-      <div className="container bg-slate-400 dark:bg-red-500 h-52">
-        <div>
+      <div className="container text-gp bg-slate-400 dark:bg-red-500">
+        {/* <div>
           <button onClick={toggleDarkMode}>
             {darkMode ? 'حالت روشن' : 'حالت دارک'}
           </button>
           <h1 className="text-2xl">سلام دنیا!</h1>
           <p>این متن در حالت {darkMode ? 'دارک' : 'روشن'} است.</p>
-        </div>
+        </div> */}
+
+        <Navbar />
       </div>
     </>
   );
