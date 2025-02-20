@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
           <link rel="icon" href="/favicon/favicon.ico" />
         </Head>
-      <body className="antialiased">
+      <body className="antialiased font-dana">
         <Main />
         <NextScript />
       </body>

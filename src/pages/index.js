@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="description" content="فروشگاه اینترنتی انواع گل و گیاه آپارتمانی و زینتی" />
       </Head>
 
-      <div className="container text-gp bg-slate-400 dark:bg-red-500">
+      <div className="container">
         {/* <div>
           <button onClick={toggleDarkMode}>
             {darkMode ? 'حالت روشن' : 'حالت دارک'}

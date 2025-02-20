@@ -3,49 +3,60 @@
 @tailwind utilities;
 
 
-@layer base{
+@layer base {
   @font-face {
     font-family: shabnam;
     src: url("/public/fonts/shabnam/Shabnam-Light.woff");
   }
-  
+
   @font-face {
     font-family: shabnamMedium;
     src: url("/fonts/shabnam/Shabnam-Medium.woff");
   }
+
   @font-face {
     font-family: shabnamBold;
     src: url("/fonts/shabnam/Shabnam-Bold.woff");
   }
-  
+
   @font-face {
     font-family: dana;
     src: url("/fonts/Dana/woff2/DanaFaNum-Regular.woff2");
   }
-  
+
   @font-face {
     font-family: danaBold;
     src: url("/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2");
   }
-  
+
   @font-face {
     font-family: danaMedium;
     src: url("/fonts/Dana/woff2/DanaFaNum-Medium.woff2");
   }
-  
+
   @font-face {
     font-family: morabba;
     src: url("/fonts/Morabba/woff2/Morabba-Light.woff2");
   }
-  
+
   @font-face {
     font-family: morabbaBold;
     src: url("/fonts/Morabba/woff2/Morabba-Bold.woff2");
   }
-  
+
   @font-face {
     font-family: morabbaMedium;
     src: url("/fonts/Morabba/woff2/Morabba-Medium.woff2");
+  }
+
+}
+
+@layer components {
+  .flex-center {
+    /* @apply flex items-center justify-center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -67,3 +78,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
