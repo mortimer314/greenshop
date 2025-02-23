@@ -53,10 +53,11 @@
 
 @layer components {
   .flex-center {
-    /* @apply flex items-center justify-center; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @apply flex items-center justify-center;
+  }
+
+  .section-title {
+    @apply flex items-center text-primary text-2xl font-morabbaBold;
   }
 }
 

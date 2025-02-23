@@ -13,7 +13,7 @@ function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
 
     return (
-        <nav className='sm:border-b relative z-0 border-gray-plus-400 py-3 '>
+        <nav className='container sm:border-b relative z-0 border-gray-plus-400 py-3 '>
             {/* desktop menu */}
             <main className='flex items-center justify-between'>
                 <div className='flex items-center gap-x-6'>
@@ -21,7 +21,7 @@ function Navbar() {
                         <div onClick={() => { setShowMobileMenu(true) }} className='lg:hidden sm:w-12 sm:h-12 w-8 h-8 [&_svg]:w-5 [&_svg]:h-5 bg-gray-plus-300 rounded-xl flex-center cursor-pointer'>
                             <IoMenu />
                         </div>
-                        <Link className='flex items-center text-primary text-2xl font-morabbaBold ' href="/">
+                        <Link className='section-title' href="/">
                             گیاه لند
                         </Link>
                     </div>
@@ -56,11 +56,7 @@ function Navbar() {
                     </ul>
 
                 </div>
-                <div className='flex items-center gap-x-2 sm:gap-x-4  text-primary 
-                sm:[&>*]:rounded-lg [&>*]:rounded-xl sm:[&>*]:h-12 [&>*]:h-8 
-                [&_a]:flex-center [&_a]:h-full [&_a]:w-full 
-                sm:[&_svg]:h-6 sm:[&_svg]:w-6  [&_svg]:h-5 [&_svg]:w-5
-                [&>*]:border [&>*]:border-solid [&>*]:border-primary'>
+                <div className='flex items-center gap-x-2 sm:gap-x-4  text-primary  sm:[&>*]:rounded-lg [&>*]:rounded-xl sm:[&>*]:h-12 [&>*]:h-8  [&_a]:flex-center [&_a]:h-full [&_a]:w-full  sm:[&_svg]:h-6 sm:[&_svg]:w-6  [&_svg]:h-5 [&_svg]:w-5 [&>*]:border [&>*]:border-solid [&>*]:border-primary'>
                     <div onClick={() => { setSearchBox(!searchBox) }} className='hidden sm:flex-center sm:w-12 w-8 cursor-pointer'>
                         <IoMdSearch />
                     </div>
@@ -92,7 +88,7 @@ function Navbar() {
             </div>
 
             {/* mobile menu */}
-            <div className={`${showMobileMenu ? "h-screen pt-4" : "h-0"} xl:hidden border border-b-2 flex justify-between flex-row-reverse transition-all  duration-500 container absolute z-50 top-0  bg-white overflow-hidden`}>
+            <div className={`${showMobileMenu ? "h-screen pt-4" : "h-0"} inset-0 l:hidden border border-b-2 flex justify-between flex-row-reverse transition-all  duration-500 container absolute z-50 top-0  bg-white overflow-hidden`}>
                 <span className='w-8 h-8 rounded-md  flex-center mr-auto border-2 border-primary/60 text-primary cursor-pointer hover:bg-primary/25' onClick={() => { setShowMobileMenu(false) }}>
                     <RxCross2 />
                 </span>

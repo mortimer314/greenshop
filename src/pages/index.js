@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Navbar from "@/components/modules/navbar/Navbar";
+import Footer from "@/components/modules/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +39,7 @@ export default function Home() {
         <meta name="description" content="فروشگاه اینترنتی انواع گل و گیاه آپارتمانی و زینتی" />
       </Head>
 
-      <div className="container">
+      <div className="">
         {/* <div>
           <button onClick={toggleDarkMode}>
             {darkMode ? 'حالت روشن' : 'حالت دارک'}
@@ -48,6 +49,8 @@ export default function Home() {
         </div> */}
 
         <Navbar />
+
+        <Footer />
       </div>
     </>
   );
