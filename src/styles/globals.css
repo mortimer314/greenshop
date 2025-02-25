@@ -59,6 +59,26 @@
   .section-title {
     @apply flex items-center text-primary text-2xl font-morabbaBold;
   }
+
+  .direction-ltr {
+    direction: ltr;
+  }
+
+  .direction-rtl {
+    direction: rtl;
+  }
+
+  /* index section landing */
+
+  /* .landing-banner{
+    background:linear-gradient(rgba(65, 127, 86, 0.66),rgba(65, 127, 86, 0.66)) ,url('./../../public/images/Vector.png') ;
+  } */
+
+
+
+
+
+
 }
 
 

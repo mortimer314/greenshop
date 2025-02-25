@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Navbar from "@/components/modules/navbar/Navbar";
 import Footer from "@/components/modules/footer/Footer";
+import Landing from "@/components/templates/index/landing/Landing";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,7 +50,7 @@ export default function Home() {
         </div> */}
 
         <Navbar />
-
+        <Landing />
         <Footer />
       </div>
     </>

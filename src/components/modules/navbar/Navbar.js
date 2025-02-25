@@ -13,7 +13,7 @@ function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
 
     return (
-        <nav className='container sm:border-b relative z-0 border-gray-plus-400 py-3 '>
+        <nav className='container sm:border-b relative z-10 border-gray-plus-400 py-3 '>
             {/* desktop menu */}
             <main className='flex items-center justify-between'>
                 <div className='flex items-center gap-x-6'>
@@ -88,7 +88,7 @@ function Navbar() {
             </div>
 
             {/* mobile menu */}
-            <div className={`${showMobileMenu ? "h-screen pt-4" : "h-0"} inset-0 l:hidden border border-b-2 flex justify-between flex-row-reverse transition-all  duration-500 container absolute z-50 top-0  bg-white overflow-hidden`}>
+            <div className={`${showMobileMenu ? "h-screen pt-4" : "h-0"} inset-0 l:hidden border border-b-2 flex justify-between flex-row-reverse transition-all  duration-500 container fixed z-50 top-0  bg-white overflow-hidden`}>
                 <span className='w-8 h-8 rounded-md  flex-center mr-auto border-2 border-primary/60 text-primary cursor-pointer hover:bg-primary/25' onClick={() => { setShowMobileMenu(false) }}>
                     <RxCross2 />
                 </span>
