@@ -11,7 +11,7 @@ function Landing() {
         <div className="grid grid-cols-2 gap-x-2 sm:gap-x-6 sm:text-lg lg:leading-8 h-10 sm:h-12 lg:h-14 mt-8">
           <Link className="flex-center rounded-xl text-white bg-primary" href=''>گیاهان تخفیف دار</Link>
           <Link className="flex-center gap-x-px sm:gap-x-2 border border-primary border-dashed rounded-xl text-primary " href=''>
-            <span className='text-nowrap tracking-tighter sm:tracking-normal'>مشاوره با گیاه پزشک</span>
+            <span className='text-nowrap'>مشاوره با گیاه پزشک</span>
             <span className='flex-center w-6 h-6 '>
               <FiArrowLeft />
             </span>
