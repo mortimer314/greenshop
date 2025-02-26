@@ -57,16 +57,15 @@ function Navbar() {
 
                 </div>
                 <div className='flex items-center gap-x-2 sm:gap-x-4  text-primary  sm:[&>*]:rounded-lg [&>*]:rounded-xl sm:[&>*]:h-12 [&>*]:h-8  [&_a]:flex-center [&_a]:h-full [&_a]:w-full  sm:[&_svg]:h-6 sm:[&_svg]:w-6  [&_svg]:h-5 [&_svg]:w-5 [&>*]:border [&>*]:border-solid [&>*]:border-primary'>
-                    <div onClick={() => { setSearchBox(!searchBox) }} className='hidden sm:flex-center sm:w-12 w-8 cursor-pointer'>
+                    <div onClick={() => { setSearchBox(!searchBox) }} className='hidden sm:flex-center sm:w-12 w-8 cursor-pointer hover:bg-primary/10 transition-colors duration-150'>
                         <IoMdSearch />
                     </div>
-                    <div className='sm:w-12 w-8 flex-center'>
+                    <div className='sm:w-12 w-8 flex-center hover:bg-primary/10 transition-colors duration-150'>
                         <Link href="/shopping-card">
                             <MdOutlineShoppingCart />
                         </Link>
-                        {/* <span>2</span> */}
                     </div>
-                    <div className='w-8 sm:w-[154px] flex-center'>
+                    <div className='w-8 sm:w-[154px] flex-center hover:bg-primary/10 transition-colors duration-150'>
                         <Link className='flex-center gap-x-2.5 sm:px-2 ' href="/logein-register">
                             <MdLogin className='hidden sm:flex' />
                             <MdOutput className='sm:hidden flex' />
@@ -81,10 +80,10 @@ function Navbar() {
 
             {/* search box */}
             <div className={`${searchBox ? 'sm:h-0' : "sm:max-h-14"} transition-all ease-linear duration-300 flex font-danaBold text-sm items-center mx-auto h-10 mt-3  bg-gray-plus-300 rounded-md overflow-hidden text-primary-dark/95`}>
-                <div className='flex-center text-inherit w-8'>
-                    <IoMdSearch />
+                <div className='flex-center text-inherit transition-colors duration-200 h-full pr-3 pl-2 bg-gray-plus-400 hover:bg-gray-plus-500'>
+                    <IoMdSearch className='w-5 h-5'/>
                 </div>
-                <input type="text" placeholder='جستجو گیاه' className='black outline-none bg-inherit w-full h-full  placeholder:text-gray-plus-600-500' />
+                <input type="text" placeholder='جستجو گیاه  ...' className='black outline-none pr-2 bg-inherit w-full h-full  placeholder:text-gray-plus-600-500' />
             </div>
 
             {/* mobile menu */}
