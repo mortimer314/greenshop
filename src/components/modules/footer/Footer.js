@@ -44,8 +44,8 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-3 min-w-80 max-w-[600px]">
-                    <div className="transition-colors duration-700 flex flex-col gap-y-4 leading-9 text-sm  sm:text-xl text-gray-plus-700 [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-gray-plus-900 lg:[&_a:first-child]:font-semibold lg:[&_a:first-child]:leading-7">
+                <div className="grid grid-cols-3 lg:flex lg:justify-between">
+                    <div className="transition-colors duration-700 flex flex-col gap-y-4 leading-9 text-sm sm:text-xl text-gray-plus-700 [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-gray-plus-900 [&_a:first-child]:font-semibold [&_a:first-child]:leading-7">
                         <Link href="">آپارتمانی</Link>
                         <Link href="">بابا آدم</Link>
                         <Link href="">یوکا</Link>
