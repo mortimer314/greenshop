@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Navbar from "@/components/modules/navbar/Navbar";
 import Footer from "@/components/modules/footer/Footer";
 import Landing from "@/components/templates/index/landing/Landing";
+import Services from "@/components/templates/index/services/Services";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export default function Home() {
 
         <Navbar />
         <Landing />
+        <Services/>
         <Footer />
       </div>
     </>

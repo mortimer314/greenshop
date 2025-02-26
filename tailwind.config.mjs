@@ -24,6 +24,7 @@ export default {
         foreground: "var(--foreground)",
         "primary": {
           DEFAULT: "#417F56",
+          "light":"#E5F2E9",
           "dark": "#294F36",
           "darker": "#21402B",
         },
