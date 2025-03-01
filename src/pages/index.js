@@ -9,6 +9,7 @@ import Landing from "@/components/templates/index/landing/Landing";
 import Services from "@/components/templates/index/services/Services";
 import Banner from "@/components/templates/index/banner/Banner";
 import HousePlanet from "@/components/templates/index/housePlanet/HousePlanet";
+import TopProducts from "@/components/templates/index/topProducts/TopProducts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,9 +55,10 @@ export default function Home() {
 
         <Navbar />
         <Landing />
-        <Services/>
-        <Banner/>
-        <HousePlanet/>
+        <Services />
+        <Banner />
+        <HousePlanet />
+        <TopProducts />
         <Footer />
       </div>
     </>
