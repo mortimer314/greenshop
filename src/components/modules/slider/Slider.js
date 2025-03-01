@@ -32,13 +32,13 @@ function Slider() {
             {/* start swiper */}
             <Swiper
                 slidesPerView={1.5}
-                spaceBetween={30}
+                spaceBetween={10}
 
                 navigation={true}
                 breakpoints={{
-                    460: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
+                    470: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 10,
                     },
                     640: {
                         slidesPerView: 2.5,
