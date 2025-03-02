@@ -45,20 +45,20 @@ function Footer() {
                 </div>
 
                 <div className="grid grid-cols-3 lg:flex lg:justify-between">
-                    <div className="transition-colors duration-700 flex flex-col gap-y-4 leading-9 text-sm sm:text-xl text-gray-plus-700 [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-gray-plus-900 [&_a:first-child]:font-semibold [&_a:first-child]:leading-7">
+                    <div className="transition-colors duration-700 flex flex-col gap-y-4 leading-9 text-sm sm:text-xl text-gray-plus-700 [&_a]:w-fit [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-gray-plus-900 [&_a:first-child]:font-semibold [&_a:first-child]:leading-7">
                         <Link href="">آپارتمانی</Link>
                         <Link href="">بابا آدم</Link>
                         <Link href="">یوکا</Link>
                         <Link href="">سانسوریا</Link>
                     </div>
-                    <div className="transition-colors duration-700 flex flex-col gap-y-4 leading-9 text-sm sm:text-xl text-gray-plus-700 [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-gray-plus-900 [&_a:first-child]:font-semibold [&_a:first-child]:leading-7">
+                    <div className="transition-colors duration-700 flex flex-col gap-y-4 leading-9 text-sm sm:text-xl text-gray-plus-700 [&_a]:w-fit [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-gray-plus-900 [&_a:first-child]:font-semibold [&_a:first-child]:leading-7">
 
                         <Link href="">تزئینی</Link>
                         <Link href="">یشم</Link>
                         <Link href="">کراسولا</Link>
                         <Link href="">کراسولا خرفه ای</Link>
                     </div>
-                    <div className="transition-colors duration-700 flex flex-col gap-y-4 leading-9 text-sm sm:text-xl text-gray-plus-700 [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-gray-plus-900 [&_a:first-child]:font-semibold [&_a:first-child]:leading-7">
+                    <div className="transition-colors duration-700 flex flex-col gap-y-4 leading-9 text-sm sm:text-xl text-gray-plus-700 [&_a]:w-fit [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-gray-plus-900 [&_a:first-child]:font-semibold [&_a:first-child]:leading-7">
 
                         <Link href="">کادویی</Link>
                         <Link href="">آنتوریوم</Link>
