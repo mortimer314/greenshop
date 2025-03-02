@@ -13,7 +13,7 @@ function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
 
     return (
-        <nav className='container sm:border-b relative z-10 border-gray-plus-400 py-3 '>
+        <nav className='container relative z-10  pt-3 '>
             {/* desktop menu */}
             <main className='flex items-center justify-between'>
                 <div className='flex items-center gap-x-6'>
@@ -79,9 +79,9 @@ function Navbar() {
             </main>
 
             {/* search box */}
-            <div className={`${searchBox ? 'sm:h-0' : "sm:max-h-14"} transition-all ease-linear duration-300 flex font-danaBold text-sm items-center mx-auto h-10 mt-3  bg-gray-plus-300 rounded-md overflow-hidden text-primary-dark/95`}>
+            <div className={`${searchBox ? 'sm:h-0' : "sm:max-h-14 mb-3"} transition-all ease-linear duration-300 flex font-danaBold text-sm items-center mx-auto h-10 mt-3  bg-gray-plus-300 rounded-md overflow-hidden text-primary-dark/95`}>
                 <div className='flex-center text-inherit transition-colors duration-200 h-full pr-3 pl-2 bg-gray-plus-400 hover:bg-gray-plus-500'>
-                    <IoMdSearch className='w-5 h-5'/>
+                    <IoMdSearch className='w-5 h-5' />
                 </div>
                 <input type="text" placeholder='جستجو گیاه  ...' className='black outline-none pr-2 bg-inherit w-full h-full  placeholder:text-gray-plus-600-500' />
             </div>
@@ -121,6 +121,7 @@ function Navbar() {
                 </ul>
             </div>
 
+            <div className="sm:border-b border-gray-plus-400 mb-3"></div>
         </nav>
     )
 }
