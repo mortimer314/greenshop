@@ -11,6 +11,7 @@ import Banner from "@/components/templates/index/banner/Banner";
 import HousePlanet from "@/components/templates/index/housePlanet/HousePlanet";
 import TopProducts from "@/components/templates/index/topProducts/TopProducts";
 import PhytosanitaryServices from "@/components/templates/index/phytosanitaryServices/PhytosanitaryServices";
+import OrnamentalPlants from "@/components/templates/index/ornamentalPlants/OrnamentalPlants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +62,9 @@ export default function Home() {
         <HousePlanet />
         <TopProducts />
         <PhytosanitaryServices/>
+        <OrnamentalPlants/>
+        {/* <TopOrnamentalPlants /> */}
+
         <Footer />
       </div>
     </>

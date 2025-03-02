@@ -1,4 +1,4 @@
-import Slider from '@/components/modules/slider/Slider'
+
 import TopProductCardsSlider from '@/components/modules/slider/TopProductCardsSlider'
 import React from 'react'
 

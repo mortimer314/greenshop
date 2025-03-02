@@ -10,7 +10,7 @@ export default function HousePlanet() {
     }
 
     return (
-        <div className="mt-14 md:mt-16">
+        <div className="mt-10 md:mt-16">
             <div className="container mb-6">
                 <Link href='' className="section-title">گیاهان آپارتمانی</Link>
             </div>
