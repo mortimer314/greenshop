@@ -4,7 +4,7 @@ import Description from './Description'
 
 function PhytosanitaryServices() {
     return (
-        <div className='container mt-16'>
+        <div className='container mt-10 md:mt-16'>
             <Link href="" className='section-title mb-6'>خدمات گیاه پزشکی </Link>
 
             <div className="grid gap-6 md:gap-x-6 md:gap-y-12 grid-cols-1 md:grid-cols-2 2xl:grid-cols-4">
