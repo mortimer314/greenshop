@@ -81,7 +81,7 @@ function Navbar() {
                 </main>
 
                 {/* search box */}
-                <div className={`${searchBox ? 'sm:h-0' : "sm:max-h-14 mb-3"} transition-all ease-linear duration-300 flex font-danaBold text-sm items-center mx-auto h-10 mt-3  bg-gray-plus-300 rounded-md overflow-hidden text-primary-dark/95`}>
+                <div className={`${searchBox ? "sm:max-h-14 mb-3" : 'sm:h-0  mb-3'} transition-all ease-linear duration-300 flex font-danaBold text-sm items-center mx-auto h-10 mt-3  bg-gray-plus-300 rounded-md overflow-hidden text-primary-dark/95`}>
                     <div className='flex-center text-inherit transition-colors duration-200 h-full pr-3 pl-2 bg-gray-plus-400 hover:bg-gray-plus-500'>
                         <IoMdSearch className='w-5 h-5' />
                     </div>
@@ -123,7 +123,7 @@ function Navbar() {
                     </ul>
                 </div>
 
-            <div className="hidden sm:block border-b border-gray-plus-400 mb-3"></div>
+                <div className="hidden sm:block border-b border-gray-plus-400 mb-3"></div>
             </div>
             <div className="border-b sm:hidden border-gray-plus-400 mb-3"></div>
         </nav>
