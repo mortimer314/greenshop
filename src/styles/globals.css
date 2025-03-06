@@ -110,82 +110,132 @@
   }
 
 
-/* swiper */
+  /* swiper */
 
-.mySwiper .swiper-button-prev:after,
-.mySwiper .swiper-button-next:after,
-.mySwiper .swiper-button-disabled  {
-  font-size: 26px !important;
-  color: #070707 !important;
-  font-weight: 1000;
-}
+  .mySwiper .swiper-button-prev:after,
+  .mySwiper .swiper-button-next:after,
+  .mySwiper .swiper-button-disabled {
+    font-size: 26px !important;
+    color: #070707 !important;
+    font-weight: 1000;
+  }
 
-.mySwiper .swiper-button-prev,
-.mySwiper .swiper-button-next, 
-.mySwiper .swiper-button-disabled {
-  opacity: 0 !important;
-}
-
-
-.home-slider .swiper-button-prev:after,
-.home-slider .swiper-button-next:after {
-  font-size: 14px !important;
-  color: #070707 !important;
-  font-weight: 1000;
-}
-
-.home-slider img {
-  position: relative;
-  right: 1px;
-}
+  .mySwiper .swiper-button-prev,
+  .mySwiper .swiper-button-next,
+  .mySwiper .swiper-button-disabled {
+    opacity: 0 !important;
+  }
 
 
-.gallery-slider .swiper-button-prev:after,
-.gallery-slider .swiper-button-next:after {
-  font-size: 26px !important;
-  color: #070707 !important;
-  font-weight: 1000;
-}
+  .home-slider .swiper-button-prev:after,
+  .home-slider .swiper-button-next:after {
+    font-size: 14px !important;
+    color: #070707 !important;
+    font-weight: 1000;
+  }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .home-slider img {
+    position: relative;
+    right: 1px;
+  }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.gallery-slider-2 {
-  box-sizing: border-box;
-  padding: 10px 0;
-}
+  .gallery-slider .swiper-button-prev:after,
+  .gallery-slider .swiper-button-next:after {
+    font-size: 26px !important;
+    color: #070707 !important;
+    font-weight: 1000;
+  }
 
-.gallery-slider-2 .swiper-slide {
-  opacity: 0.4;
-}
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.gallery-slider-2 .swiper-slide-thumb-active {
-  opacity: 1;
-}
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.articles_slider .swiper-button-prev,
-.articles_slider .swiper-button-next {
-  opacity: 0;
-}
+  .gallery-slider-2 {
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
 
-.articles_slider:hover .swiper-button-prev,
-.articles_slider:hover .swiper-button-next {
-  opacity: 1;
-  transition: transform 0.7s ease, opacity 0.7s ease;
-}
+  .gallery-slider-2 .swiper-slide {
+    opacity: 0.4;
+  }
+
+  .gallery-slider-2 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .articles_slider .swiper-button-prev,
+  .articles_slider .swiper-button-next {
+    opacity: 0;
+  }
+
+  .articles_slider:hover .swiper-button-prev,
+  .articles_slider:hover .swiper-button-next {
+    opacity: 1;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+  }
+
+
+  /* ==================== registe_login ==================== */
+
+  .wrapper-input {
+    @apply relative z-0 w-full;
+  }
+
+  .input-first-icon {
+    @apply absolute top-3.5 right-4 text-gray-plus-600;
+  }
+
+  .input-second-icon {
+    @apply absolute top-3.5 left-4 text-gray-plus-600;
+  }
+
+  .section-input {
+
+    @apply block w-full pt-[5px] text-gray-plus-800 border bg-transparent border-gray-plus-500 h-12 px-11 rounded-xl outline-none transition duration-200;
+
+  }
+
+  .wrapper-input .section-input:focus~.input-first-icon ,
+  .wrapper-input .section-input:focus~.input-second-icon {
+    @apply text-primary;
+  }
+
+  .section-input:focus {
+
+    @apply border-primary;
+
+  }
+
+  .section-input-lable::before {
+
+    content: attr(title);
+
+    @apply absolute -z-10 text-sm sm:text-base transition-all duration-200 right-11 top-3.5 text-gray-plus-600;
+
+  }
+
+  .section-input:not(:placeholder-shown)+.section-input-lable::before,
+  .section-input:focus+.section-input-lable::before {
+
+    @apply  z-0  right-5 -top-3 bg-white px-1 text-primary;
+
+
+  }
+
+
   /* index section landing */
 
   /* .landing-banner{
