@@ -41,7 +41,7 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className="rounded-full px-8 lg:rounded-none  lg:max-h-[558px]  relative z-0">
+      <div className="rounded-full px-8 lg:px-0 lg:rounded-none  lg:max-h-[558px]  relative z-0">
         <span className="lg:hidden absolute w-3 h-3 top-12 right-6 text-primary font-bold">
           <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 0L6.35045 3.64955L10 5L6.35045 6.35045L5 10L3.64955 6.35045L0 5L3.64955 3.64955L5 0Z" fill="#417F56" />
