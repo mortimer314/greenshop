@@ -1,5 +1,5 @@
 import Navbar from '@/components/modules/navbar/Navbar';
-import DesktopWrapperPannel from '@/components/templates/p-user/DesktopWrapperPannel';
+import DesktopWrapperPannel from '@/components/templates/p-user/desktop/DesktopWrapperPannel';
 import { useRouter } from 'next/router'
 import React from 'react'
 

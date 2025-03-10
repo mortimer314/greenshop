@@ -2,6 +2,7 @@ import React from 'react'
 import DesktopMenu from './DesktopMenu'
 import DesktopDetails from './DesktopDetails'
 
+
 function DesktopWrapperPannel() {
     return (
         <>
