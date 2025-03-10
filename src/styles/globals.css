@@ -78,7 +78,7 @@
     @apply text-primary font-danaBold text-xl lg:text-2xl;
   }
 
-  /* swiper */
+  /* ============================= swiper ============================= */
   .swiper {
     width: 100% !important;
     height: 100% !important;
@@ -192,7 +192,7 @@
   }
 
 
-  /* ==================== registe_login ==================== */
+  /* ==================== inputs registe login  p-user ==================== */
 
   .wrapper-input {
     @apply relative z-0 w-full;
@@ -203,12 +203,12 @@
   }
 
   .input-second-icon {
-    @apply absolute top-3.5 left-4 text-gray-plus-600;
+    @apply absolute top-3.5 left-4 text-gray-plus-600 cursor-pointer;
   }
 
   .section-input {
 
-    @apply block w-full pt-[5px] text-gray-plus-800 border bg-transparent border-gray-plus-500 h-12 px-11 rounded-xl outline-none transition duration-200;
+    @apply block w-full text-right pt-[5px] text-gray-plus-900 border bg-transparent border-gray-plus-500 h-12 px-11 rounded-xl outline-none transition duration-200;
 
   }
 
