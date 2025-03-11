@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import DetailsWrapper from '../components/DetailsWrapper'
 import Title from '../components/Title'
-import Link from 'next/link';
 
-import { MdMobileFriendly, MdOutlineKey, MdOutlineMailOutline, MdOutlineLocalPhone  } from "react-icons/md";
+import { MdMobileFriendly, MdOutlineKey, MdOutlineMailOutline, MdOutlineLocalPhone, MdOutlineLibraryAdd } from "react-icons/md";
 import { IoMdEyeOff, IoMdEye } from "react-icons/io";
-import { FaUser, FaRegUser  } from "react-icons/fa";
+import { FaUser, FaRegUser } from "react-icons/fa";
 import { ImPencil } from "react-icons/im";
 import { LuMapPin } from "react-icons/lu";
+
 
 
 function DesktopAccountDetails() {
@@ -24,24 +24,32 @@ function DesktopAccountDetails() {
         <DetailsWrapper>
 
           {/* Edit profile picture */}
-          <div className="flex items-center flex-wrap justify-start gap-2 md:gap-4 mb-8 md:mb-12">
+          {
+            userData.img ?
+              <div className="flex items-center flex-wrap justify-start gap-2 md:gap-4 mb-8 md:mb-12">
+                <div className="flex-center w-20  h-20 rounded-full overflow-hidden border border-gray-plus-500">
+                  <img className='block w-full h-full rounded-lg' src="/images/p-user/userImg.png" alt="plant pic" />
+                </div>
 
-            <div className="flex-center w-20 md:w-20 h-20 md:h-20 rounded-full overflow-hidden bg-gray-100 text-gray-plus-500">
-              {
-                userData.img ? <img className='block w-full h-full rounded-full' src="/images/p-user/userImg.png" alt="" /> :
-                  <FaUser className='w-3/4 h-full' />
-              }
-            </div>
+                <div className="flex items-center justify-start gap-x-2 md:gap-x-4 ">
+                  <label className="section-button cursor-pointer">
+                    ویرایش با تصویر جدید
+                    <input type="file" className='opacity-0 invisible absolute' />
+                  </label>
+                  <div className="section-button border border-primary text-primary bg-gray-plus-200 cursor-pointer">حذف تصویر</div>
 
-            <div className="flex items-center justify-start gap-x-2 md:gap-x-4 ">
-              <label className="section-button cursor-pointer">
-                ویرایش با تصویر جدید
+                </div>
+              </div> :
+              <label className="flex flex-col justify-center items-center mb-8 md:mb-12 gap-y-2 w-20  h-20 rounded-lg overflow-hidden cursor-pointer bg-gray-100 border border-gray-plus-500">
+                <MdOutlineLibraryAdd className='w-6 h-6 text-gray-plus-800' />
+                <span className='text-xs text-gray-plus-900'>
+                  آپلود تصویر 
+                </span>
                 <input type="file" className='opacity-0 invisible absolute' />
               </label>
-              <div className="section-button border border-primary text-primary bg-gray-plus-200 cursor-pointer">حذف تصویر</div>
+          }
 
-            </div>
-          </div>
+        
 
           {/* Inputs of account details */}
           <div className="">
@@ -51,13 +59,13 @@ function DesktopAccountDetails() {
               <div className="wrapper-input">
                 <input placeholder="" value='مرتضی' className='section-input' id='name' type="text" required autoComplete='off' maxLength={11} />
                 <label className='section-input-lable' htmlFor="name" title='نام' data-title=""></label>
-                <FaRegUser  className='input-first-icon w-5 h-5 ' />
+                <FaRegUser className='input-first-icon w-5 h-5 ' />
                 <ImPencil onClick={() => false} className='input-second-icon  w-5 h-5 ' />
               </div>
               <div className="wrapper-input">
                 <input placeholder="" value='خلیل مقدم' className='section-input' id='lastname' type="text" required autoComplete='off' maxLength={11} />
                 <label className='section-input-lable' htmlFor="lastname" title='نام خانوادگی' data-title=""></label>
-                <FaRegUser  className='input-first-icon w-5 h-5 ' />
+                <FaRegUser className='input-first-icon w-5 h-5 ' />
                 <ImPencil onClick={() => false} className='input-second-icon  w-5 h-5 ' />
               </div>
 
@@ -69,7 +77,7 @@ function DesktopAccountDetails() {
                 <ImPencil onClick={() => false} className='input-second-icon  w-5 h-5 ' />
               </div>
               <div className="wrapper-input">
-                <input placeholder="" className='section-input' id='email' type="email"  autoComplete='off' />
+                <input placeholder="" className='section-input' id='email' type="email" autoComplete='off' />
                 <label className='section-input-lable' htmlFor="email" title='ایمیل' data-title=""></label>
                 <MdOutlineMailOutline className='input-first-icon w-5 h-5 ' />
                 <ImPencil onClick={() => false} className='input-second-icon  w-5 h-5 ' />
@@ -77,15 +85,15 @@ function DesktopAccountDetails() {
 
 
               <div className="wrapper-input">
-                <input placeholder="" value='ایران - لردگان و اردکان' className='section-input' id='address' type="text"  autoComplete='off' maxLength={11} />
+                <input placeholder="" value='ایران - لردگان و اردکان' className='section-input' id='address' type="text" autoComplete='off' maxLength={11} />
                 <label className='section-input-lable' htmlFor="address" title='آدرس منزل' data-title=""></label>
-                <LuMapPin  className='input-first-icon w-5 h-5 ' />
+                <LuMapPin className='input-first-icon w-5 h-5 ' />
                 <ImPencil onClick={() => false} className='input-second-icon  w-5 h-5 ' />
               </div>
               <div className="wrapper-input">
-                <input placeholder=""  className='section-input' id='telephoneNumber' type='tel'  autoComplete='off' maxLength={11} />
+                <input placeholder="" className='section-input' id='telephoneNumber' type='tel' autoComplete='off' maxLength={11} />
                 <label className='section-input-lable' htmlFor="telephoneNumber" title='تلفن منزل' data-title=""></label>
-                <MdOutlineLocalPhone  className='input-first-icon w-5 h-5 ' />
+                <MdOutlineLocalPhone className='input-first-icon w-5 h-5 ' />
                 <ImPencil onClick={() => false} className='input-second-icon  w-5 h-5 ' />
               </div>
 
