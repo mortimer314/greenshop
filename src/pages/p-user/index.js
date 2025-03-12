@@ -1,6 +1,7 @@
+import React from 'react'
 import Navbar from '@/components/modules/navbar/Navbar'
 import DesktopWrapperPannel from '@/components/templates/p-user/desktop/DesktopWrapperPannel'
-import React from 'react'
+import MobileWrapperPannel from '@/components/templates/p-user/mobile/MobileWrapperPannel '
 
 function index() {
     return (
@@ -9,11 +10,7 @@ function index() {
 
 
             {/* ======================== mobile menu ======================== */}
-            <div className="sm:hidden">
-                <div className="container ">
-                    mobile menu
-                </div>
-            </div>
+            <MobileWrapperPannel />
 
 
             {/* ======================== desktop ========================  */}

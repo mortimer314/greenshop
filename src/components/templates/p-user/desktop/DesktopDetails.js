@@ -9,7 +9,6 @@ function DesktopDetails() {
     const route = useRouter()
     const shortName = route.query.userPages
     const asPath = route.asPath
-    console.log(route)
 
     return (
         <>

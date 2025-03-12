@@ -4,7 +4,7 @@ import Title from '../components/Title'
 
 import { MdMobileFriendly, MdOutlineKey, MdOutlineMailOutline, MdOutlineLocalPhone, MdOutlineLibraryAdd } from "react-icons/md";
 import { IoMdEyeOff, IoMdEye } from "react-icons/io";
-import { FaUser, FaRegUser } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 import { ImPencil } from "react-icons/im";
 import { LuMapPin } from "react-icons/lu";
 
