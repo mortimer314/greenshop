@@ -9,7 +9,7 @@ function TopProductCard() {
             {/* <div className="relative bg-[url('/images/topgreen/frame1.png')] transition-bg hover:bg-[length:120%_120%]  h-full bg-cover bg-center bg-no-repeat flex items-center justify-center"> */}
             <div className="relative h-full bg-[url('/images/topgreen/frame1.png')] bg-cover bg-center bg-no-repeat flex items-center justify-center transition-transform duration-200  lg:hover:scale-110 ">
 
-                <Link href='' className="block absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] ">
+                <Link href='/product/13' className="block absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] ">
                     <div className="text-white flex-col content-end h-full p-5">
                         <div className="mb-2 lg:text-xl">گیاه بونسای</div>
                         <div className="inline-flex flex-nowrap py-2 px-4 gap-x-2 items-center justify-start font-extralight border rounded-xl text-sm lg:text-lg">
