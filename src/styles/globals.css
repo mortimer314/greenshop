@@ -66,6 +66,11 @@
     @apply flex-center text-sm font-medium bg-primary text-white rounded-xl py-2 px-3 md:px-4 h-10 text-nowrap;
   }
 
+  .section-button-secondary{
+    @apply flex-center text-sm font-medium text-primary border border-primary rounded-xl py-2 px-3 md:px-4 h-10 text-nowrap;
+  }
+
+
   .direction-ltr {
     direction: ltr;
   }
