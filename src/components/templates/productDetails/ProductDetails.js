@@ -38,33 +38,35 @@ function ProductDetails() {
                         <h5 className='text-center sm:text-right my-8 sm:my-4 text-gray-plus-900 sm:text-xl font-semibold'>گیاه طبیعی یوکا</h5>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 sm:mt-7 pb-4 sm:pb-0 border-b border-gray-plus-500 sm:border-none">
-                        <p className='hidden sm:block mb-4'>ویژگی ها</p>
+                        <div className="w-full">
+                            <p className='hidden 2xl:block mb-4 text-gray-plus-900 text-lg font-danaMedium'>ویژگی ها :</p>
 
-                        {/* show less than 3 items in mobile and in desktop show less than 6 items */}
+                            {/* show less than 3 items in mobile and in desktop show less than 6 items */}
 
-                        {/* desktop template */}
-                        <ul className='hidden sm:grid grid-cols-2 gap-x-4 sm:gap-x-6 sm:gap-y-10'>
-                            <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
-                                <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>جنس گلدان:</span>
-                                <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>پلاستیکی</span>
-                            </li>
-                            <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
-                                <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>خاک گیاه:</span>
-                                <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>خاک گلدانی</span>
-                            </li>
-                            <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
-                                <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>وزن</span>
-                                <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>۴۰۰۰ گرم</span>
-                            </li>
-                            <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
-                                <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>ابعاد</span>
-                                <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>۲۵۰x۲۵۰x۸۰۰</span>
-                            </li>
-                            <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
-                                <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>وضعیت نسبت به آفتاب</span>
-                                <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>آفتاب دوست</span>
-                            </li>
-                        </ul>
+                            {/* desktop template */}
+                            <ul className='hidden w-full sm:grid grid-cols-2 gap-x-4 sm:gap-x-6 sm:gap-y-10'>
+                                <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
+                                    <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>جنس گلدان:</span>
+                                    <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>پلاستیکی</span>
+                                </li>
+                                <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
+                                    <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>خاک گیاه:</span>
+                                    <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>خاک گلدانی</span>
+                                </li>
+                                <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
+                                    <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>وزن</span>
+                                    <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>۴۰۰۰ گرم</span>
+                                </li>
+                                <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
+                                    <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>ابعاد</span>
+                                    <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>۲۵۰x۲۵۰x۸۰۰</span>
+                                </li>
+                                <li className='flex flex-col gap-y-1 sm:gap-y-1 font-danaMedium py-1 sm:py-1.5 px-3 sm:px-4 bg-gray-plus-300 rounded-lg'>
+                                    <span className='text-xs sm:text-sm/6 text-gray-plus-800 font-medium '>وضعیت نسبت به آفتاب</span>
+                                    <span className='text-xs sm:text-base/7 font-normal text-gray-plus-950'>آفتاب دوست</span>
+                                </li>
+                            </ul>
+                        </div>
 
                         {/* mobile template */}
 
