@@ -1,4 +1,5 @@
 import Breadcrumb from '@/components/modules/breadcrumb/Breadcrumb'
+import Comments from '@/components/modules/comments/Comments'
 import Footer from '@/components/modules/footer/Footer'
 import Navbar from '@/components/modules/navbar/Navbar'
 import Slider from '@/components/modules/slider/Slider'
@@ -36,6 +37,12 @@ function index() {
           <Slider />
 
         </div>
+
+        <div className="container mt-20">
+          <Comments />
+        </div>
+
+
       </div>
 
 
