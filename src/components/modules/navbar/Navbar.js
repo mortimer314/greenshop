@@ -58,26 +58,40 @@ function Navbar() {
                         </ul>
 
                     </div>
-                    <div className='flex items-center gap-x-2 sm:gap-x-4  text-primary  sm:[&>*]:rounded-lg [&>*]:rounded-xl sm:[&>*]:h-12 [&>*]:h-8  [&_a]:flex-center [&_a]:h-full [&_a]:w-full  sm:[&_svg]:h-6 sm:[&_svg]:w-6  [&_svg]:h-5 [&_svg]:w-5 [&>*]:border [&>*]:border-solid [&>*]:border-primary'>
-                        <div onClick={() => { setSearchBox(!searchBox) }} className='hidden sm:flex-center sm:w-12 w-8 cursor-pointer hover:bg-primary/10 transition-colors duration-150'>
-                            <IoMdSearch />
-                        </div>
-                        <div className='sm:w-12 w-8 flex-center hover:bg-primary/10 transition-colors duration-150'>
-                            <Link href="/shopping-card">
-                                <MdOutlineShoppingCart />
-                            </Link>
-                        </div>
-                        <div className='w-8 sm:w-[154px] flex-center hover:bg-primary/10 transition-colors duration-150'>
-                            <Link className='flex-center gap-x-2.5 sm:px-2 ' href="/logein-register">
-                                <MdLogin className='hidden sm:flex' />
-                                <MdOutput className='sm:hidden flex' />
-                                <span className='hidden sm:inline'>
-                                    ورود/ثبت نام
-                                </span>
-                            </Link>
-                        </div>
-                    </div>
 
+                    <div className="flex items-center gap-x-2 sm:gap-x-4">
+                        <div className='flex items-center gap-x-2 sm:gap-x-4  text-primary  sm:[&>*]:rounded-lg [&>*]:rounded-xl sm:[&>*]:h-12 [&>*]:h-8  [&_a]:flex-center [&_a]:h-full [&_a]:w-full  sm:[&_svg]:h-6 sm:[&_svg]:w-6  [&_svg]:h-5 [&_svg]:w-5 [&>*]:border [&>*]:border-solid [&>*]:border-primary'>
+                            <div onClick={() => { setSearchBox(!searchBox) }} className='hidden sm:flex-center sm:w-12 w-8 cursor-pointer hover:bg-primary/10 transition-colors duration-150'>
+                                <IoMdSearch />
+                            </div>
+                            <div className='sm:w-12 w-8 flex-center hover:bg-primary/10 transition-colors duration-150'>
+                                <Link href="/shopping-card">
+                                    <MdOutlineShoppingCart />
+                                </Link>
+                            </div>
+
+                            {/* if user is not login show this template */}
+
+                            {/* <div className='w-8 sm:w-[154px] flex-center hover:bg-primary/10 transition-colors duration-150'>
+                                <Link className='flex-center gap-x-2.5 sm:px-2 ' href="/logein-register">
+                                    <MdLogin className='hidden sm:flex' />
+                                    <MdOutput className='sm:hidden flex' />
+                                    <span className='hidden sm:inline'>
+                                        ورود/ثبت نام
+                                    </span>
+                                </Link>
+                            </div> */}
+                        </div>
+
+                        {/* if user is login show this template */}
+                        <Link href='/p-user' className="flex items-center gap-x-2 font-danaMedium">
+                            <img className='w-8 h-8 sm:w-12 sm:h-12  rounded-full overflow-hidden' src="/images/p-user/userImg.png" alt="" />
+                            <div className="hidden md:block text-lg text-[#0c0c0c]">
+                                <span>سلام ؛ &nbsp;</span>
+                                <span>مرتضی</span>
+                            </div>
+                        </Link>
+                    </div>
                 </main>
 
                 {/* search box */}
