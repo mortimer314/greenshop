@@ -4,7 +4,7 @@ import Navbar from '@/components/modules/navbar/Navbar'
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { MdOutlineDelete } from "react-icons/md";
 import React from 'react'
-import ShoppingCardNumber from '@/components/templates/shopping-card/shoppingCardNumber';
+import ShoppingCardNumber from '@/components/templates/shopping-card/ShoppingCardNumber';
 import EmptyBasket from '@/components/templates/shopping-card/EmptyBasket';
 
 
